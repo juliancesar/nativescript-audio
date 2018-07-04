@@ -390,7 +390,8 @@ export class TNSPlayer implements TNSPlayerI {
             this.volume = parseFloat('0.' + this._lastPlayerVolume.toString());
           }
 
-          this.resume();
+          // This line was removed because the sound was playing always after other songs!
+          //this.resume();
           break;
         case android.media.AudioManager.AUDIOFOCUS_GAIN_TRANSIENT:
           TNS_Player_Log('AUDIOFOCUS_GAIN_TRANSIENT');
